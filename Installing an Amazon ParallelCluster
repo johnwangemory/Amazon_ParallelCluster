@@ -1,1 +1,5 @@
+Before Amazon ParallelCluster 3.6.0, Amazon ParallelCluster could be installed through a command line rather than launching a CloudFormation template. 
+Reading through the latest AWS ParallelCluster User Guide is a good starting point. Without worrying about cost incurred in your AWS account, you may 
+try installing an AWS ParallelCluster for learning purpose.
+
 
