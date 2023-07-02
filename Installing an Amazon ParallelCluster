@@ -2,4 +2,8 @@ Before Amazon ParallelCluster 3.6.0, Amazon ParallelCluster could be installed t
 Reading through the latest AWS ParallelCluster User Guide is a good starting point. Without worrying about cost incurred in your AWS account, you may 
 try installing an AWS ParallelCluster for learning purpose.
 
+There are multiple ways to create an AWS ParallelCluster depending on version of Amazon ParallelCluster you select. Regardless version of AWS ParallelCluster, 
+you can create an AWS ParallelCluster with the pcluster command. It is the simplest method for creating an AWS ParallelCluster.
 
+1. Create a management node with Amazon Linux 2 or Amazon Linux 2023. It's better to select Amazon Linux 2023 because Amazon Linux 2 offers long-term support 
+until June 30, 2025. As for as advantages of using Amazon Linux 2023, please reference https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#security-updates
