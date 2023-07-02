@@ -1,2 +1,21 @@
 # Amazon_ParallelCluster
 Experience with Amazon ParallelCluster. Years ago, I managed a High Performance computing cluster with 17 nodes on Fedora Linux. Now I work on Amazon ParallelCluster. 
+
+# Introduction
+Before Amazon ParallelCluster 3.6.0, Amazon ParallelCluster could be installed through a command line rather than launching a CloudFormation template. 
+Reading through the latest AWS ParallelCluster User Guide is a good starting point. Without worrying about cost incurred in your AWS account, you may 
+try installing an AWS ParallelCluster for learning purpose.
+
+There are multiple ways to create an AWS ParallelCluster depending on version of Amazon ParallelCluster you select. Regardless version of AWS ParallelCluster, 
+you can create an AWS ParallelCluster with the pcluster command. It is the simplest method for creating an AWS ParallelCluster.
+
+# Install an AWS ParallelCluster through a command line
+1. Create a management node with Amazon Linux 2 or Amazon Linux 2023. It's better to select Amazon Linux 2023 because Amazon Linux 2 offers long-term support 
+until June 30, 2025. As for as advantages of using Amazon Linux 2023, please reference https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#security-updates.
+
+2. Secure the management node.
+   2-1. Use DirectoryService to authenticate users who are eligible to log in to the management node.
+   2-2. Update and patch the management node automatically.
+   2-3. Set up a security group to restrict access to the management node.
+
+3. Attach a ManagementNodeRole to the management node.
